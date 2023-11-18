@@ -9,39 +9,59 @@
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
+  <main class="flex-container-col">
+    <section class="results">
+      <p class="result-title">Your Result</p>
+      <div class="score">
+        <h1 class="actual">76</h1>
+        <p class="total">of 100</p>
+      </div>
+      <h3 class="result">Great</h3>
+      <p class="description">
+        You scored higher than 65% of the people who have taken these tests.
+      </p>
+    </section>
+    <section class="summary">
+      <p class="summary-title">Summary</p>
+      <div class="flex-container-col">
+        <div class="category" id="reaction">
+          <div class="label">
+            <img/>
+            <p class="subtitle">Reaction</p>
+          </div>
+          <p class="subscore">80 / 100</p>
+        </div>
+        <div class="category" id="memory">
+          <div class="label">
+            <img/>
+            <p class="subtitle">Memory</p>
+          </div>
+          <p class="subscore">92 / 100</p>
+        </div>
+        <div class="category" id="verbal">
+          <div class="label">
+            <img/>
+            <p class="subtitle">Verbal</p>
+          </div>
+          <p class="subscore">61 / 100</p>
+        </div>
+        <div class="category" id="visual">
+          <div class="label">
+            <img/>
+            <p class="subtitle">Visual</p>
+          </div>
+          <p class="subscore">72 / 100</p>
+        </div>
+      </div>
+      <button class="continue">Continue</button>
+    </section>
+  </main> 
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Winona Murphy</a>.
+  </footer>
 </body>
 </html>
